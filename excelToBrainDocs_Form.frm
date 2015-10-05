@@ -174,6 +174,10 @@ Private Sub CommandButton3_Click()
     
 End Sub
 
+Private Sub Label12_Click()
+
+End Sub
+
 Private Sub Label7_Click()
 
 End Sub
