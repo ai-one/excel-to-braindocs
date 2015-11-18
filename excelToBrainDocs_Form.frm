@@ -506,6 +506,8 @@ End Function
 
 Private Function doPostDocs(MyRequest As WinHttpRequest, url As String, libraryName As String, libraryDescription As String, postDocs As Collection) As Boolean
 
+        ' Set time-outs. If time-outs are set they must be set before open.
+        MyRequest.SetTimeouts 180000, 180000, 180000, 180000
         MyRequest.Open "POST", url & "/at/library", True
         MyRequest.SetRequestHeader "Content-Type", "application/json"
     
